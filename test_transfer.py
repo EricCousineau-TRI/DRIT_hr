@@ -5,6 +5,9 @@ from model import DRIT
 from saver import save_imgs
 import os
 
+from make_deterministic import make_deterministic
+make_deterministic()
+
 def main():
   # parse options
   parser = TestOptions()

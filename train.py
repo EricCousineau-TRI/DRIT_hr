@@ -4,6 +4,9 @@ from dataset import dataset_unpair
 from model import DRIT
 from saver import Saver
 
+from make_deterministic import make_deterministic
+make_deterministic()
+
 def main():
   # parse options
   parser = TrainOptions()
