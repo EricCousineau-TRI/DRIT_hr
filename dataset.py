@@ -8,6 +8,7 @@ class dataset_single(data.Dataset):
   def __init__(self, opts, setname, input_dim):
     self.dataroot = opts.dataroot
     images = os.listdir(os.path.join(self.dataroot, opts.phase + setname))
+    images.sort()
     self.img = [os.path.join(self.dataroot, opts.phase + setname, x) for x in images]
     self.size = len(self.img)
     self.input_dim = input_dim

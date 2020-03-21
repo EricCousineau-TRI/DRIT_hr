@@ -36,8 +36,6 @@ def main():
   # test
   print('\n--- testing ---')
   for idx1, img1 in enumerate(loader):
-    if idx1 == 100:
-      break
     print('{}/{}'.format(idx1 + 1, len(loader)))
     img1 = img1.cuda()
     imgs = [img1]
